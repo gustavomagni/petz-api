@@ -48,7 +48,7 @@ public class ProdutoRest {
 		}
 	}
 
-	@GetMapping(path = "/getFindByName/{codigo}")
+	@GetMapping(path = "/getFindByCodigo/{codigo}")
 	public ResponseEntity<Object> findByCodigo(@PathVariable(value = "codigo") String codigo) {
 		log.info("Buscando produto por codigo... " + codigo);
 

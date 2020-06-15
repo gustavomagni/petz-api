@@ -50,7 +50,7 @@ public class CompraRest {
 
 	@GetMapping
 	public ResponseEntity<Object> findAll() {
-		log.info("Buscando todos os produtos");
+		log.info("Buscando todas as compras");
 
 		try {
 			return new ResponseEntity<>(compraService.findAll(), HttpStatus.OK);
